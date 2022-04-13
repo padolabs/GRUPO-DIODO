@@ -8,8 +8,8 @@
  #include "app.h"
 
  extern SPI_HandleTypeDef hspi1;
- extern uint8_t data_array[4];
-
+ extern uint8_t data_array[2];
+ uint8_t transmit_array[2];
  uint8_t tx_address[5] = {0xE7,0xE7,0xE7,0xE7,0xE7};
  uint8_t rx_address[5] = {0xD7,0xD7,0xD7,0xD7,0xD7};
 
@@ -32,6 +32,8 @@
 			HAL_GPIO_WritePin(led_GPIO_Port, led_Pin, 1);
 			HAL_Delay(50);
 			HAL_GPIO_WritePin(led_GPIO_Port, led_Pin, 0);
+			transmit_array[0] = corrente;
+			nrf24_send(transmit_array);
 		}
 	 }
  }

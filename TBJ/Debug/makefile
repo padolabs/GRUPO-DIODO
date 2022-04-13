@@ -9,6 +9,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include libs/stepmotor/subdir.mk
 -include libs/nrf24/subdir.mk
 -include aplication/subdir.mk
 -include Drivers/STM32G0xx_HAL_Driver/Src/subdir.mk
@@ -62,8 +63,8 @@ all: main-build
 main-build: TBJ.elf secondary-outputs
 
 # Tool invocations
-TBJ.elf: $(OBJS) $(USER_OBJS) /home/gabrielly/Downloads/TBJ/STM32G0B1RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "TBJ.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"/home/gabrielly/Downloads/TBJ/STM32G0B1RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TBJ.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+TBJ.elf: $(OBJS) $(USER_OBJS) /home/gabrielly/Documentos/GRUPO-DIODO/TBJ/STM32G0B1RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "TBJ.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"/home/gabrielly/Documentos/GRUPO-DIODO/TBJ/STM32G0B1RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TBJ.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

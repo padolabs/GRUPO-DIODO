@@ -28,8 +28,8 @@ aplication/app.o: ../aplication/app.c ../aplication/app.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi_ex.h \
- /home/gabrielly/Downloads/TBJ/libs/nrf24/nrf24.h \
- /home/gabrielly/Downloads/TBJ/libs/nrf24/nRF24L01.h
+ /home/gabrielly/Documentos/GRUPO-DIODO/TBJ/libs/nrf24/nrf24.h \
+ /home/gabrielly/Documentos/GRUPO-DIODO/TBJ/libs/nrf24/nRF24L01.h
 
 ../aplication/app.h:
 
@@ -93,6 +93,6 @@ aplication/app.o: ../aplication/app.c ../aplication/app.h \
 
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi_ex.h:
 
-/home/gabrielly/Downloads/TBJ/libs/nrf24/nrf24.h:
+/home/gabrielly/Documentos/GRUPO-DIODO/TBJ/libs/nrf24/nrf24.h:
 
-/home/gabrielly/Downloads/TBJ/libs/nrf24/nRF24L01.h:
+/home/gabrielly/Documentos/GRUPO-DIODO/TBJ/libs/nrf24/nRF24L01.h:

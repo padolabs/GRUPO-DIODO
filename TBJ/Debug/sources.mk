@@ -25,4 +25,5 @@ Core/Startup \
 Drivers/STM32G0xx_HAL_Driver/Src \
 aplication \
 libs/nrf24 \
+libs/stepmotor \
 
