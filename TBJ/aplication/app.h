@@ -2,7 +2,7 @@
  * app.h
  *
  *  Created on: Mar 24, 2022
- *      Author: gabrielly
+ *      Author: Danielly
  */
 
 #ifndef APP_H_
